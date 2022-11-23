@@ -1,4 +1,5 @@
-import {Component} from "react";
+import { Component } from "react";
+import {FeedbackStyled} from './Feedback.styled'
 
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 import Statistics from '../Statistics/Statistcs';
@@ -34,7 +35,7 @@ class Feedback extends Component {
 
   render() {
     return (
-    <div>
+    <FeedbackStyled>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={this.state}
@@ -54,7 +55,7 @@ class Feedback extends Component {
             <Notification text="There is no feedback" />
           )}
         </Section>
-      </div>
+      </FeedbackStyled>
     );
   }
 }
