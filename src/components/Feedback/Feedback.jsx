@@ -1,4 +1,3 @@
-// import { Component } from 'react';
 import { FeedbackStyled } from './Feedback.styled';
 import { useState } from 'react';
 
